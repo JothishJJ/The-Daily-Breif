@@ -40,7 +40,7 @@ You can test the server coding using the following command
 go run test
 ```
 
-You can run `unit tests` client side using the following command
+You can run `e2e` side using the following command
 
 ```bash
 npm run test
