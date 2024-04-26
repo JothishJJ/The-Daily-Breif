@@ -10,7 +10,11 @@
 	});
 </script>
 
-<h1>Hello World</h1>
+<svelte:head>
+	<title>World | The Daily Brief</title>
+</svelte:head>
+
+<h1>World</h1>
 {#if dataObj}
 	<div>{dataObj.message}</div>
 {/if}
