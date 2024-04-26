@@ -27,24 +27,35 @@ You can run the client side, by opening a seperate terminal and then using the f
 
 ```bash
 cd client
-npm run dev
+pnpm run dev
 ```
 
 Your client will serve on port `5173`
 
 ## Testing
 
-You can test the server coding using the following command
-
-```bash
-go run test
-```
+### Client Side
 
 You can run `e2e` side using the following command
 
 ```bash
-npm run test
+pnpm run test 
 ```
 
-Testing is done with `vitest`
+##### OR 
+
+```bash
+pnpm run cypress
+```
+
+Testing is done with `cypress`
+
+### Server Side
+
+You can just run the following command to run the tests
+
+```bash
+cd server/
+go test ./...
+```
 
