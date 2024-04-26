@@ -27,6 +27,7 @@ You can run the client side, by opening a seperate terminal and then using the f
 
 ```bash
 cd client
+pnpm install
 pnpm run dev
 ```
 

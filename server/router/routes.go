@@ -1,22 +1,11 @@
 package router
 
 import (
-	"net/http"
-
-	"github.com/JothishJJ/thedailybrief/crawler"
 	"github.com/gin-gonic/gin"
 )
 
 func Routes(r *gin.Engine) {
-
-	r.GET("/world", func(c *gin.Context) {
-
-		crawlerJobs := crawler.Websites{
-			"https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
-		}
-
-		allDatas := crawler.GetAllData(crawlerJobs)
-
-		c.JSON(http.StatusOK, allDatas)
-	})
+	r.GET("/", HomeHandler)
+	r.GET("/world", WorldHandler)
+	r.GET("/india", IndiaHandler)
 }

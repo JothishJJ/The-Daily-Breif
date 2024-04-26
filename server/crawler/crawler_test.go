@@ -16,6 +16,7 @@ func TestCrawler(t *testing.T) {
 func TestGetAllData(t *testing.T) {
 	websites := crawler.Websites{
 		"https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
+		"https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
 	}
 
 	datas := crawler.GetAllData(websites)

@@ -82,7 +82,11 @@ func GetAllData(crawlerJobs Websites) datas {
 			log.Fatal(err)
 		}
 
-		allDatas = append(allDatas, data[:20])
+		if len(data) > 20 {
+			allDatas = append(allDatas, data[:20])
+		} else {
+			allDatas = append(allDatas, data)
+		}
 	}
 
 	return allDatas
