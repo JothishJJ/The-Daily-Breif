@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-    <title>India | The Daily Breif</title>
+    <title>India News | The Daily Breif</title>
 </svelte:head>
 
 <div class="my-8 px-80">

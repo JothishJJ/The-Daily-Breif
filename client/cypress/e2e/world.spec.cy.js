@@ -1,14 +1,14 @@
-describe("India Tests", () => {
-    beforeEach(() => {
-        cy.visit("/india")
-    })
+describe("Home Spec", () => {
 
+    beforeEach(() => {
+        cy.visit("/world")
+    })
     it("should have a title", () => {
-        cy.get("title").should("contain", "India News | The Daily Breif")
+        cy.get("title").should("contain", "World News | The Daily Breif")
     })
 
     it("should have an h1", () => {
-        cy.get("h1").should("contain", "India News")
+        cy.get("h1").should("contain", "World News")
     })
 
     it("should have the news field", () => {
@@ -19,5 +19,4 @@ describe("India Tests", () => {
         cy.get('[data-cy="news-title"]').should("be.visible")
         cy.get('[data-cy="news-desc"]').should("be.visible")
     })
-
 })

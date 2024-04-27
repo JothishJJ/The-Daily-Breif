@@ -6,17 +6,17 @@
     let data;
 
     onMount(async () => {
-        const response = await fetch("http://localhost:8080/top");
+        const response = await fetch("http://localhost:8080/world");
         data = await response.json();
     });
 </script>
 
 <svelte:head>
-    <title>Top News | The Daily Breif</title>
+    <title>World News | The Daily Breif</title>
 </svelte:head>
 
 <div class="my-8 px-80">
-    <h1 class="text-center mb-8">Top News</h1>
+    <h1 class="text-center mb-8">World News</h1>
     {#if data}
         <div data-cy="news" class="flex flex-col gap-12">
             {#each data as d}

@@ -4,11 +4,11 @@ describe("Home Spec", () => {
         cy.visit("/")
     })
     it("should have a title", () => {
-        cy.get("title").should("contain", "World | The Daily Breif")
+        cy.get("title").should("contain", "Top News | The Daily Breif")
     })
 
     it("should have an h1", () => {
-        cy.get("h1").should("contain", "World News")
+        cy.get("h1").should("contain", "Top News")
     })
 
     it("should have the news field", () => {
