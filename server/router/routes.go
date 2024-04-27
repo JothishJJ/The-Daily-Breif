@@ -6,6 +6,8 @@ import (
 
 func Routes(r *gin.Engine) {
 	r.GET("/", HomeHandler)
+
+	r.GET("/top", TopHandler)
 	r.GET("/world", WorldHandler)
 	r.GET("/india", IndiaHandler)
 }

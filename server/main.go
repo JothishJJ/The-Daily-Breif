@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func makeServer() *gin.Engine {
+func getServer() *gin.Engine {
 	r := gin.Default()
 
 	config := cors.DefaultConfig()
@@ -18,7 +18,7 @@ func makeServer() *gin.Engine {
 }
 
 func main() {
-	r := makeServer()
+	r := getServer()
 	router.Routes(r)
 	r.Run()
 }

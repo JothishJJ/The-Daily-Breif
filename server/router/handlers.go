@@ -13,6 +13,16 @@ func HomeHandler(c *gin.Context) {
 	})
 }
 
+func TopHandler(c *gin.Context) {
+	crawlerJobs := crawler.Websites{
+		"https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+	}
+
+	allDatas := crawler.GetAllData(crawlerJobs)
+
+	c.JSON(http.StatusOK, allDatas)
+}
+
 func WorldHandler(c *gin.Context) {
 
 	crawlerJobs := crawler.Websites{
